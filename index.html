@@ -8,26 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 
-
-    <style>
-        /* img {
-    display: flex;
-    align-items:center;
-    justify-content:space-around;
-    height: 120vh;
-    width: 151vw;
-    z-index: 0;
-    opacity: 0.2;
-    top: 0;
-    bottom: 0;
-    background-repeat: no-repeat;
-    
-  } */
-    </style>
-
 </head>
 
 <body>
+
 
     <header id="nav-bar">
 
@@ -42,12 +26,12 @@
         </div>
 
         <nav>
-            <a href="./index.html">Home</a>
-            <a href="./skills.html">Skills</a>
-            <a href="./projects.html">Projects</a>
-            <a href="./education.html">Education</a>
-            <a href="./about.html">About</a>
-            <a href="./contact.html">Contact</a>
+            <a href="#index">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     <main id="pic">
@@ -65,61 +49,115 @@
         </div>
 
 
-        <!-- about -->
-        <div class="profile-container" id="pro-con">
-            <div class="profile-picture" id="pro-pic">
-                <img src="./images/bio.avif" alt="Profile Picture">
-            </div>
-            <div class="profile-details" id="pro-det">
-                <h1>Bala Sree Dharmarao</h1>
-                <p class="profession" > <i>My bio...</i></p>
-               
-                <p class="bio" style="font-size: large;">
-                    "I’m a 3rd-year Computer Science Engineering student from Vignan University ,Andhra Pradesh.With a strong foundation in HTML, CSS, Python, and more, I love creating web experiences that are both functional and visually appealing."<br><br>
-                </p>
-            </div>
-        </div>
+        <section id="index">
+            <div class="profile-container" id="pro-con">
+                <div class="profile-picture" id="pro-pic">
+                    <img src="./images/bio.avif" alt="Profile Picture">
+                </div>
+                <div class="profile-details" id="pro-det">
+                    <h1>Bala Sree Dharmarao</h1>
+                    <p class="profession"> <i>My bio...</i></p>
 
-        <!-- skills -->
-        <!-- <section class="skills-section" style="position: relative; top: 120px;">
-            <h2>My Skills</h2>
-            <div class="skill">
-                <p>HTML & CSS</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 90%;"></div>
+                    <p class="bio" style="font-size: large;">
+                        "I’m a 3rd-year Computer Science Engineering student from Vignan University ,Andhra Pradesh.With
+                        a strong foundation in HTML, CSS, Python, and more, I love creating web content."<br><br>
+                    </p>
                 </div>
             </div>
+            <br><br> <br><br> <br><br>
 
-            <div class="skill">
-                <p>C</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 85%;"></div>
+            <section id="contact-section">
+                <h2>Feedback Form</h2>
+                <div class="contact-container" style="margin: 20px; padding: 10px;">
+                    <form action="" method="post">
+                        <div class="contact-details">
+                            <p>
+                                <label for="name"><strong>Name:</strong></label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required
+                                    style="border: 2px solid blue;height: 30px;width: 400px;color: black;">
+                            </p>
+                            <p>
+                                <label for="email"><strong>Email:</strong></label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required
+                                    style="border: 2px solid blue;height: 30px;width: 400px;">
+                            </p>
+                            <label for="feedback"
+                                style="position: relative;right: 195px;"><strong>Feedback:</strong></label>
+                            <p>
+
+                                <textarea id="feedback" name="feedback" rows="5" placeholder="Enter your feedback"
+                                    required
+                                    style="border: 2px solid blue;height: 80px;width: 400px;position: relative;left: 30px;"></textarea>
+                            </p>
+                        </div>
+                        <div class="social-media">
+                            <button type="submit" id="submit-btn">Submit Feedback</button>
+                        </div>
+                    </form>
                 </div>
+            </section>
+
+
+            <div class="lbutton">
+                <p id="para">To know more ... get into the sections and read more</p>
+                <button id="rmore">Read more</button>
             </div>
 
-            <div class="skill">
-                <p>DBMS</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 80%;"></div>
-                </div>
-            </div>
+        </section>
 
-            <div class="skill">
-                <p>PYTHON</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 75%;"></div>
-                </div>
-            </div>
+        <br><br><br><br><br><br><br><br>
 
-            <div class="skill">
-                <p>C++</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 70%;"></div>
+        <section id="skills">
+            <!-- <div class="image" id="bg">
+                <img src="./images/bg-1.jpg" alt="">
+    
+            </div> -->
+            <section class="skills-section" id="skill">
+                <h2>My Skills</h2>
+                <div class="skill">
+                    <p>HTML & CSS</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
                 </div>
-            </div>
-        </section>  -->
-        <!-- projects -->
-        <!-- <section id="projects">
+
+                <div class="skill">
+                    <p>C</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <p>DBMS</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <p>PYTHON</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <p>C++</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <br><br> <br><br> <br><br> <br><br>
+        <section id="projects">
+            <!-- <div class="image" id="bg">
+                <img src="./images/bg-4.webp" alt="">
+    
+            </div> -->
+
             <h2>Projects</h2>
             <div class="projects-grid" id="projects-grid">
                 <div class="project-box">
@@ -147,8 +185,8 @@
                     <a href="https://colorlib.com/wp/template/personalportfolio/" target="_blank">View Project</a>
                 </div>
 
-        Hidden projects -->
-        <!-- <div class="project-box" style="display: none;">
+                <!-- Hidden projects -->
+                <div class="project-box" style="display: none;">
                     <h3>Project 4: Blogging Platform</h3>
                     <img src="./images/blog.jpg" alt="Blogging Platform Screenshot">
                     <p>A blogging platform developed using Django and PostgreSQL. It supports user authentication,
@@ -158,87 +196,123 @@
 
             </div>
             <button id="toggle-btn">Show More</button>
-        </section>  -->
 
-        <!-- education -->
+        </section>
 
-        <!-- <section id="education-section">
-            <h2>Education</h2>
-            <ul class="education-list">
-                <li class="education-item">
-                    <h3>Bachelor of Technology (B.Tech)</h3>
-                    <p>Computer Science Engineering</p>
-                    <span class="education-date">2024 - Present</span>
-                    <p>Vignan University, Andhra Pradesh, India</p>
-                </li>
-                <li class="education-item">
-                    <h3>Intermediate</h3>
-                    <p>Mathematics, Physics, Chemistry (MPC)</p>
-                    <span class="education-date">2020 - 2022</span>
-                    <p>Bhavishya Junior College, Andhra Pradesh, India</p>
-                </li>
-                <li class="education-item">
-                    <h3>Secondary Education (10th)</h3>
-                    <p>General Studies</p>
-                    <span class="education-date">2019 - 2020</span>
-                    <p>Nirmala High School, Andhra Pradesh, India</p>
-                </li>
-            </ul>
-        </section> -->
+        <br><br> <br><br> <br><br>
+        <section id="education">
+            <!-- <div class="image" id="bg">
+                <img src="./images/bg-2.jpg" alt="">
+    
+            </div> -->
 
+            <section id="education-section">
+                <h2>Education</h2>
+                <ul class="education-list">
+                    <li class="education-item">
+                        <h3>Bachelor of Technology (B.Tech)</h3>
+                        <p>Computer Science Engineering</p>
+                        <span class="education-date">2024 - Present</span>
+                        <p>Vignan University, Andhra Pradesh, India</p>
+                    </li>
+                    <li class="education-item">
+                        <h3>Intermediate</h3>
+                        <p>Mathematics, Physics, Chemistry (MPC)</p>
+                        <span class="education-date">2020 - 2022</span>
+                        <p>Bhavishya Junior College, Andhra Pradesh, India</p>
+                    </li>
+                    <li class="education-item">
+                        <h3>Secondary Education (10th)</h3>
+                        <p>General Studies</p>
+                        <span class="education-date">2019 - 2020</span>
+                        <p>Nirmala High School, Andhra Pradesh, India</p>
+                    </li>
+                </ul>
+            </section>
 
-        <!-- contact -->
-<br><br><br><br>
-<section id="contact-section">
-    <h2>Feedback Form</h2>
-    <div class="contact-container" style="margin: 20px; padding: 10px;">
-        <form action="" method="post">
-            <div class="contact-details">
-                <p>
-                    <label for="name"><strong>Name:</strong></label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required style="border: 2px solid blue;height: 30px;width: 400px;color: black;">
-                </p>
-                <p>
-                    <label for="email"><strong>Email:</strong></label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required style="border: 2px solid blue;height: 30px;width: 400px;">
-                </p>
-                <label for="feedback" style="position: relative;right: 195px;"><strong>Feedback:</strong></label>
-                <p>
-                    
-                    <textarea id="feedback" name="feedback" rows="5" placeholder="Enter your feedback" required style="border: 2px solid blue;height: 80px;width: 400px;position: relative;left: 30px;"></textarea>
-                </p>
+        </section>
+        <br><br><br><br>
+        <section id="about">
+            <!-- <div class="image" id="bg">
+                <img src="./images/bg-5.jpg" alt="">
+    
+            </div> -->
+            <div class="profile-container" id="pro-con">
+                <div class="profile-picture" id="pro-pic">
+                    <img src="./images/photo.jpg" alt="Profile Picture">
+                </div>
+                <div class="profile-details" id="pro-det">
+                    <h1>Bala Sree Dharmarao</h1>
+                    <p class="profession">Web Developer</p>
+                    <p class="location">Andhra Pradesh, INDIA</p>
+                    <p class="bio">
+                        I'm a passionate web developer ,enthusiastic in creating dynamic and responsive websites. I love
+                        coding and am always eager to learn new technologies.
+                    </p>
+                </div>
             </div>
-            <div class="social-media">
-                <button type="submit" id="submit-btn"  >Submit Feedback</button>
-            </div>
-        </form>
-    </div>
-</section>
+        </section>
+
+        <br><br><br><br><br>
+
+        <section id="contact">
+            <!-- <div class="image" id="bg">
+                <img src="./images/bg-6.jpg" alt="">
+    
+            </div> -->
+            <section id="contact-section">
+                <h2>Get in Touch with me...</h2>
+                <div class="contact-container">
+                    <div class="contact-details">
+                        <p><strong>Name:</strong> Bala Sree Dharmarao</p>
+                        <p><strong>Email:</strong> abc@gmail.com</a></p>
+                        <p><strong>Phone:</strong> +91 1234567890</a></p>
+                        <p><strong>Location:</strong> Andhra Pradesh, India</p>
+                    </div>
+                    <div class="social-media">
+                        <h3>Connect with me</h3>
+                        <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">Facebook</a>
+                        <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">Instagram</a>
+                        <a href="https://www.twitter.com" target="_blank" class="social-icon twitter">Twitter</a><br><br>
+                        <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin">Linkedin</a>
+                    </div>
+                </div>
+            </section>
+
+            <br><br><br><br><br><br><br><br><br>
+
+            <footer>
+                <div class="foot">
+                    <h6 id="cr">@Copyrights reserved..!</h6>
+                </div>
+                <div class="images" id="logos">
+
+                    <img src="./images/icon-facebook.svg" alt="no image found" id="fb">
+                    <img src="./images/icon-instagram.svg" alt="no image found" id="insta">
+                    <img src="./images/icon-twitter.svg" alt="no image found" id="twi">
+                </div>
+            </footer>
 
 
-        <div class="lbutton">
-            <p id="para">To know more ... get into the sections and read more</p>
-            <button id="rmore">Read more</button>
-        </div>
-        
-        
+        </section>
+
+
+
 
 
     </main>
 
 
-    <footer>
-        <div class="foot">
-            <h6 id="cr">@Copyrights reserved..!</h6>
-        </div>
-        <div class="images" id="logos">
 
-            <img src="./images/icon-facebook.svg" alt="no image found" id="fb">
-            <img src="./images/icon-instagram.svg" alt="no image found" id="insta">
-            <img src="./images/icon-twitter.svg" alt="no image found" id="twi">
-        </div>
-    </footer>
+
     <script src="./js/script.js"></script>
+
+
+
+
 </body>
+
+
+
 
 </html>

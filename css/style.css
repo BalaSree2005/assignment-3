@@ -244,6 +244,7 @@ nav a:hover {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     /* Optional: Adds a subtle shadow for depth */
     padding: 20px;
+    margin: 10px;
     /* Optional: Adds padding inside the container for spacing */
 }
 
@@ -290,6 +291,7 @@ nav a:hover {
     /* display: flex; */
     /* align-items:center ;
     justify-content: center; */
+    margin: 20px;
     position: relative;
     top: 20vh;
     width: 80%;
@@ -638,48 +640,62 @@ nav a:hover {
 
 /*footer*/
 
+/* General reset for body and html */
+/* html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+} */
+
+/* Footer styling */
 footer {
     display: flex;
-    align-items: end;
-    justify-content: space-between;
-    height: 200px;
-    font-size: large;
-    background-color: rgb(20, 20, 50);
-    position: relative;
-    top: 90vh;
+    align-items: center;
+    justify-content: space-between; /* Changed to space-between for better spacing */
     width: 100%;
-    color: white;
-
-    /* position: sticky;
+    background-color: rgb(32, 15, 68);
+    padding: 35px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    position: relative; 
     bottom: 0;
-    */
-
-
+    left: 0;
 }
 
-#logos {
-    color: white;
+/* Container for the copyright text */
+footer .foot {
+    margin-bottom: 0;
+}
+
+/* Copyright text styling */
+footer .foot h6 {
+    padding: 25px;
+    font-size: 14px;
+    color: #e7dfdf;
+    margin: 0;
+}
+
+/* Social media icons container */
+footer .images {
+    
     background-color: white;
+    padding: 25px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 15px;
-    padding: 10px;
-
-    position: relative;
-    bottom: 100px;
-    right: 50px;
+    padding: 0; /* Removed padding for better alignment */
+    justify-content: space-around;
+    gap: 15px; /* Space between icons */
 }
 
-#cr {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    bottom: 100px;
-    left: 20px;
-    font-size: x-large;
+/* Social media icons */
+footer .images img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+footer .images img:hover {
+    opacity: 0.8; /* Slight fade effect on hover */
 }
 
 /*media query*/
@@ -721,15 +737,13 @@ footer {
         font-size: 18px;
     }
 
-    footer {
-        font-size: medium;
-        top: 95vh;
-    }
+   
+    
 }
 
 /*tablet*/
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 769px) and (max-width: 1440px) {
     header {
         flex-direction: column;
         align-items: center;
@@ -783,15 +797,13 @@ footer {
         /* Adjust button padding */
     }
 
-    footer {
-        font-size: small;
-        top: 120vh;
-    }
+    
+    
 }
 
 /*phone*/
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     header {
         flex-direction: column;
         align-items: center;
@@ -838,8 +850,96 @@ footer {
 #feedback{
     left: 150px;
 }
+   
+}
+
+/* Base styles for footer (already provided) */
+/* No changes needed here */
+
+/* Media Query for Small Mobile (s-320px) */
+@media (max-width: 320px) {
     footer {
-        font-size: small;
-        top: 150vh;
+        padding: 15px 0;
+    }
+
+    #cr {
+        font-size: 12px;
+    }
+
+    .images img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* Media Query for Medium Mobile (m-375px) */
+@media (max-width: 375px) {
+    footer {
+        padding: 15px 0;
+    }
+
+    #cr {
+        font-size: 13px;
+    }
+
+    .images img {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+/* Media Query for Large Mobile (l-425px) */
+@media (max-width: 425px) {
+    footer {
+        padding: 20px 0;
+    }
+
+    #cr {
+        font-size: 14px;
+    }
+
+    .images img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Media Query for Tablet (tablet-768px) */
+@media (max-width: 768px) {
+    footer {
+        padding: 20px 0;
+    }
+
+    #cr {
+        font-size: 14px;
+    }
+
+    .images {
+        gap: 20px; /* Increased gap for better spacing */
+    }
+
+    .images img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Media Query for Laptop (laptop-1024px) */
+@media (max-width: 1024px) {
+    footer {
+        padding: 20px 0;
+    }
+
+    #cr {
+        font-size: 14px;
+    }
+
+    .images {
+        gap: 20px; /* Maintain good spacing */
+    }
+
+    .images img {
+        width: 30px;
+        height: 30px;
     }
 }
